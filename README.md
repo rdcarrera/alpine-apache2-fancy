@@ -35,5 +35,11 @@ __EXTERNAL_PORT__ in the instructions
 * docker run -dit --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:80 rdcarrera/alpine-apache2-fancy
 ```
 
+### Change logo
+If you want to change the default logo you have to mount the next volume:
+```
+-v /path/to/your/logo.png:/fancy/html/logo/logo.png
+```
+
 ## SCREENSHOOTS
 ![alt text](https://raw.githubusercontent.com/rdcarrera/alpine-apache2-fancy/master/screenshoots/01_screenshoot.png)
