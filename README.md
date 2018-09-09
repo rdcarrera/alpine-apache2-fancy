@@ -12,9 +12,9 @@ If you want to use this container you must build the Dockerfile with the content
 ### Prerequisites
 You need the next tools to use this container:
 ```
-GIT Client
-Docker service
-Docker build tools
+* GIT Client
+* Docker service
+* Docker build tools
 ```
 You must mount a volume to show over the fancy index,  __PATH_TO_MOUNT__ in the instructions
 
@@ -24,13 +24,13 @@ __EXTERNAL_PORT__ in the instructions
 ## INSTRUCTIONS
 ### Instructions for build container image
 ```
-git clone https://github.com/rdcarrera/alpine-apache2-fancy.git
-cd alpine-apache2-fancy
-docker build -t example/tag:0.1 .
-docker run -dit --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:80 example/tag:0.1
+* git clone https://github.com/rdcarrera/alpine-apache2-fancy.git
+* cd alpine-apache2-fancy
+* docker build -t example/tag:0.1 .
+* docker run -dit --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:80 example/tag:0.1
 ```
 ### Instruction for run container from docker [DockerHub](https://hub.docker.com/r/rdcarrera/alpine-apache2-fancy/)
 
 ```
-docker run -dit --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:80 rdcarrera/alpine-apache2-fancy
+* docker run -dit --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:80 rdcarrera/alpine-apache2-fancy
 ```
