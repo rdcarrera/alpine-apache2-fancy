@@ -2,8 +2,8 @@
 Code for a simple container with Apache httpd fancy index configured
 
 ## Version 0.3
-Changed the user to Apache ___(Non root user)___<br>
-Moved the expose port to ___8080___<br>
+Changed the user to Apache ___(Non root user)___ <br>
+Moved the expose port to ___8080___ <br>
 Moved the symbolic link of the workdir and the creation of the /run/apache2 folder to the DockerFile.
 
 ## Disclaimer
