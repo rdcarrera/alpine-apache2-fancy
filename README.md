@@ -1,11 +1,6 @@
 # alpine-apache2-fancy
 Code for a simple container with Apache httpd fancy index configured
 
-## Version 0.3
-Changed the user to Apache ___(Non root user)___ <br>
-Moved the expose port to ___8080___ <br>
-Moved the symbolic link of the workdir and the creation of the /run/apache2 folder to the DockerFile.
-
 ## Disclaimer
 The container could remove the data in the volume, please mount the volume in read only adding __:ro__ at the end of the volume statement.  
 
@@ -46,3 +41,18 @@ If you want to use a custom logo you've' to mount the next volume:
 
 ## SCREENSHOOTS
 ![alt text](https://raw.githubusercontent.com/rdcarrera/alpine-apache2-fancy/master/screenshoots/01_screenshoot.png)
+
+## VERSION HISTORY
+### Version 1.0
+* Connected to DockerHub for automated buildings.
+
+### Version 0.4
+* Added favicon image
+* Edit css for the small image in the header
+* Added comments for the docker-entrypoint
+
+
+### Version 0.3
+* Changed the user to Apache ___(Non root user)___
+* Moved the expose port to ___8080___
+* Moved the symbolic link of the workdir and the creation of the /run/apache2 folder to the DockerFile.
