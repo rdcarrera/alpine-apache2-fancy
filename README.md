@@ -25,12 +25,12 @@ __EXTERNAL_PORT__ in the instructions
 git clone https://github.com/rdcarrera/alpine-apache2-fancy.git
 cd alpine-apache2-fancy
 docker build -t example/tag:0.1 .
-docker run -dit --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:8080 example/tag:0.1
+docker run -d --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:8080 example/tag:0.1
 ```
 ### Instruction to run container from docker [DockerHub](https://hub.docker.com/r/rdcarrera/alpine-apache2-fancy/)
 
 ```
-docker run -dit --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:8080 rdcarrera/alpine-apache2-fancy
+docker run -d --name alpine-apache2-fancy -v PATH_TO_MOUNT:/fancy/mount:ro -p EXTERNAL_PORT:8080 rdcarrera/alpine-apache2-fancy
 ```
 
 ### Custom logo

@@ -3,7 +3,8 @@
 # VERSION: 1
 
 FROM alpine:latest
-MAINTAINER Ruben D. Carrera <rdcarrera>
+LABEL maintener "Ruben D. Carrera <@rdcarrera>"
+LABEL version 1.0
 
 #ENV Variables
 ENV FANCY_FOLDER /fancy/mount
