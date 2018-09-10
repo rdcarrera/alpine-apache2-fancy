@@ -1,3 +1,7 @@
+# ALPINE APACHE 2 FANCY
+#
+# VERSION: 1
+
 FROM alpine:latest
 MAINTAINER Ruben D. Carrera <rdcarrera>
 
