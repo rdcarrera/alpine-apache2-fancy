@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Ruben D. Carrera <rdcarrera> 
+MAINTAINER Ruben D. Carrera <rdcarrera>
 
 #ENV Variables
 ENV FANCY_FOLDER /fancy/mount
@@ -34,5 +34,5 @@ USER apache
 #Definie entrypoint
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-#Execute the apache2 
+#Execute the apache2
 CMD ["/usr/sbin/apachectl", "-f" , "/fancy/cnf/apache2.conf",  "-D", "FOREGROUND"]
