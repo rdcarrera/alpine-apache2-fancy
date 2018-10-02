@@ -3,18 +3,18 @@ Code for a simple container with Apache httpd fancy index configured
 
 <a name="table"></a>
 ## Table of Contents
-1. [Disclaimer](#disclaimer-)
-2. [Getting Started](#getting-started-)
+* [Disclaimer](#disclaimer-)
+* [Getting Started](#getting-started-)
   * [Container info](#container-info-)
   * [Prerequisites](#prerequisites-)
-3. [INSTRUCTIONS](#instructions-)
+* [INSTRUCTIONS](#instructions-)
   * [Instructions to build container image](#instructions-to-build-container-image-)
   * [Instruction to run container from docker](#instruction-to-run-container-from-docker-dockerhub-)
   * [Custom logo](#custom-logo-)
-4.  [SCREENSHOOTS](#screenshoots-)
-5.  [VERSION History](#version-history-)
-6.  [Author](#author-)
-7.  [Mentions](#mentions-)
+*  [SCREENSHOOTS](#screenshoots-)
+*  [VERSION History](#version-history-)
+*  [Author](#author-)
+*  [Mentions](#mentions-)
 
 ## Disclaimer [<img src="https://image.flaticon.com/icons/svg/23/23714.svg" alt="drawing" width="20"/>](#table)
 The container could remove the data in the volume, please mount the volume in read only adding __:ro__ at the end of the volume statement.  
