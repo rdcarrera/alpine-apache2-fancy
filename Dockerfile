@@ -1,40 +1,43 @@
 # ALPINE APACHE 2 FANCY
 #
-# VERSION: 1
+# VERSION: 1.1
 
 FROM alpine:latest
 LABEL maintener "Ruben D. Carrera <@rdcarrera>"
-LABEL version 1.0
+LABEL version 1.1
 
 #ENV Variables
-ENV FANCY_FOLDER /fancy/mount
+ENV FANCY_FOLDER="/fancy/mount" \
+FANCY_DISABLE_FOOTER="no" \
+DOCKER_EXPOSE_PORT="8080" \
+DOCKER_WORKDIR="/fancy" \
+DOCKER_USER=apache
+
+#MOUNT VOLUME
+VOLUME [ "${FANCY_FOLDER}" ]
 
 #Install the apache2 & apache2-ctl
-RUN apk add --update apache2 apache2-ctl
-
-#Create apache2 run folder
-RUN mkdir /run/apache2
-
-#ADD 777 perms to the folder apache2 run
-RUN chmod 777 /run/apache2
-
-#Remove apache folder
-RUN rm -rf /var/www/localhost/htdocs
-
-#Mount FANCY_FOLDER
-RUN ln -s $FANCY_FOLDER /var/www/localhost/htdocs
+RUN apk add --update apache2 apache2-ctl && \
+rm -rf /var/www/localhost/htdocs && \
+chmod 777 /run/apache2 && \
+ln -s $FANCY_FOLDER /var/www/localhost/htdocs
 
 #Expose the port 80
-EXPOSE 8080
+EXPOSE ${DOCKER_EXPOSE_PORT}
 
 #Copy the folder from the project
 ADD fancy.tar.xz /
 
 #Copy docker entrypoint
-COPY ./docker-entrypoint.sh /docker-entrypoint.sh
+COPY ./docker-entrypoint.sh /
+RUN chmod 777 /docker-entrypoint.sh && \
+chmod -R 777 ${DOCKER_WORKDIR}/html
 
 #User apache user
-USER apache
+USER $DOCKER_USER
+
+#WORKDIR 
+WORKDIR $DOCKER_WORKDIR
 
 #Definie entrypoint
 ENTRYPOINT ["/docker-entrypoint.sh"]
