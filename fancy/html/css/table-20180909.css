@@ -1,0 +1,25 @@
+#data table {
+    max-width: 1600px;
+    width: 100%;
+    border-width: 1px;
+    border-color: #000000;
+    font-size: 20px;
+    margin: 0 auto;
+}
+#data td, #data th {
+  color: #000000;
+  padding: 0.6em;
+  alink="#000000";
+  vlink="#000000";
+}
+#data tr {
+  background-color: #D8D8D8;
+}
+#data th {
+  background: #D8D8D8;
+  text-align: left;
+  border-collapse: collapse;
+}
+#data tr:nth-child(even) {
+    background-color: #DDDDDD;
+}
