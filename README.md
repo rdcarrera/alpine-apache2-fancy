@@ -17,7 +17,7 @@ Code for a simple container with Apache httpd fancy index configured
 *  [Mentions](#mentions-)
 
 ## Disclaimer [<img src="https://image.flaticon.com/icons/svg/23/23714.svg" alt="drawing" width="20"/>](#table)
-The container could remove the data in the volume, please mount the volume in read only adding __:ro__ at the end of the volume statement.  
+The container could remove the data in the volume, please mount the volume in read only adding __:ro__ at the end of the volume statement.
 
 ## Getting Started [<img src="https://image.flaticon.com/icons/svg/23/23714.svg" alt="drawing" width="20"/>](#table)
 If you want to use this container you must build the Dockerfile with the content of this repository or use the pushed image to [DockerHub](https://hub.docker.com/r/rdcarrera/alpine-apache2-fancy/)
@@ -62,10 +62,10 @@ If you want to use a custom logo you've' to mount the next volume:
 ```
 
 ## SCREENSHOOTS [<img src="https://image.flaticon.com/icons/svg/23/23714.svg" alt="drawing" width="20"/>](#table)
-![alt text](https://raw.githubusercontent.com/rdcarrera/alpine-apache2-fancy/master/screenshoots/01_screenshoot.png)
+![screenshot](screenshoots/01_screenshoot.png)
 
 ## VERSION History [<img src="https://image.flaticon.com/icons/svg/23/23714.svg" alt="drawing" width="20"/>](#table)
-[VERSION History](https://github.com/rdcarrera/alpine-apache2-fancy/blob/master/VERSION.md)
+[VERSION History](VERSION.md)
 
 ## Author [<img src="https://image.flaticon.com/icons/svg/23/23714.svg" alt="drawing" width="20"/>](#table)
 [<img src="https://avatars0.githubusercontent.com/u/26046280?s=460&v=4"/>](https://github.com/rdcarrera)
